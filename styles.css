@@ -11,13 +11,6 @@ html {
     height: 100%;
 }
 
-.bg {
-    background-image: url('./asset/main.webp');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .bg_tc {
     background-image: url('./asset/tc.webp');
@@ -27,10 +20,12 @@ html {
     background-size: cover;
 }
 
-.text_container {
-    position: absolute;
-    color: white;
-    font-family: 'berlin';
+.bg {
+    background-image: url('./asset/main.webp');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header {
@@ -48,7 +43,12 @@ html {
     border-radius: 15px;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+}
+
+.text_container {
+    position: absolute;
+    color: white;
+    font-family: 'berlin';
 }
 
 .content {
@@ -60,10 +60,48 @@ html {
     color: white;
 }
 
-h1 {
-    font-size: 2em;
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 22px;
+    }
 }
 
-p {
-    font-size: 22px;
+@media (max-width: 480px) {
+    .bg {
+        background-image: url('./asset/portrail.webp');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 70%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        font-family: 'berlin';
+        font-size: 1.5em;
+        color: white;
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 13px;
+    }
 }
