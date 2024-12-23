@@ -1,0 +1,69 @@
+/* Add the decaration on top */
+@font-face {
+    font-family: 'berlin';
+    src: url('asset/fonts/berlin.TTF') format('truetype');
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.bg {
+    background-image: url('./asset/main.webp');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg_tc {
+    background-image: url('./asset/tc.webp');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text_container {
+    position: absolute;
+    color: white;
+    font-family: 'berlin';
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-family: 'berlin';
+    font-size: 1.5em;
+    color: white;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 22px;
+}
