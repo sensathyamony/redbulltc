@@ -11,24 +11,6 @@ html {
     height: 100%;
 }
 
-
-.bg_tc {
-    background-image: url('./asset/tc.webp');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.bg {
-    background-image: url('./asset/main.webp');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .logo {
     position: absolute;
     right: 0px;
@@ -42,6 +24,7 @@ html {
     height: 50%;
 }
 
+
 .header {
     display: flex;
     flex-direction: column;
@@ -49,19 +32,25 @@ html {
     justify-content: center;
     text-align: center;
     width: 70%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
     padding: 10px;
     font-family: 'berlin';
-    color: white;
+    color: #262e6b;
     border-radius: 15px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 .text_container {
     position: absolute;
     color: white;
     font-family: 'berlin';
+}
+
+
+p {
+    font-size: 2vh;
+    color: #262e6b;
 }
 
 .content {
@@ -73,8 +62,169 @@ html {
     color: white;
 }
 
-p {
-    font-size: 2vh;
+/* FOR big Screen */
+@media all and (min-width: 1280px) {
+
+    .bg {
+        background-image: url('./asset/big_land_bg.jpg');
+        height: 100vh;
+    }
+}
+
+/* FOR Laptop */
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+    .bg {
+        background-image: url('./asset/test_laptop.jpg');
+        max-width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header {
+        background-color: #fff;
+        margin-top: 10%;
+    }
+
+    .text_container {
+        position: absolute;
+        color: white;
+        font-family: 'berlin';
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        color: #262e6b;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #262e6b;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .bg {
+        background-image: url('./asset/stand_bg.jpg');
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header {
+        background-color: #fff;
+        margin-top: 25%;
+    }
+
+    .text_container {
+        position: absolute;
+        color: white;
+        font-family: 'berlin';
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        color: #262e6b;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #262e6b;
+    }
+}
+
+@media (max-width: 768px) {
+    .bg_tc {
+        background-image: url('./asset/stand_bg.jpg');
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .bg {
+        background-image: url('./asset/stand_bg.jpg');
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .header {
+        background-color: #fff;
+    }
+
+    .text_container {
+        position: absolute;
+        color: white;
+        font-family: 'berlin';
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        color: #262e6b;
+    }
+
+    p {
+        font-size: 0.7rem;
+        color: #262e6b;
+    }
+}
+
+/* 
+
+@media (min-width: 1024px) {
+    .bg {
+        background-image: url('./asset/land_bg.jpg');
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bg {
+        background-image: url('./asset/stand_bg.jpg');
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 768px) {
@@ -90,7 +240,7 @@ p {
 
 @media (max-width: 480px) {
     .bg {
-        background-image: url('./asset/portrail.webp');
+        background-image: url('./asset/stand_bg.jpg');
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -121,4 +271,4 @@ p {
     p {
         font-size: 12px;
     }
-}
+} */
