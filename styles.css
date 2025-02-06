@@ -9,57 +9,16 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: 'berlin';
 }
 
-.logo {
-    position: absolute;
-    right: 0px;
-    height: 10%;
+.blank {
+    height: 100vh;
 }
 
-.bottle {
-    position: absolute;
-    right: 10px;
-    bottom: 0px;
-    height: 50%;
-}
-
-
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.textbox {
     width: 70%;
-    background-color: #fff;
-    padding: 10px;
-    font-family: 'berlin';
-    color: #262e6b;
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 5%;
-}
-
-.text_container {
     position: absolute;
-    color: white;
-    font-family: 'berlin';
-}
-
-
-p {
-    font-size: 2vh;
-    color: #262e6b;
-}
-
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
 }
 
 /* FOR big Screen */
@@ -67,7 +26,29 @@ p {
 
     .bg {
         background-image: url('./asset/big_land_bg.jpg');
-        height: 100vh;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 180vh;
+    }
+
+    .cover {
+        background-color: #fff;
+        width: 70%;
+        padding: 10px;
+        margin: auto;
+        border-radius: 15px;
+    }
+
+    .cover h1 {
+        text-align: center;
+        color: #262e6b;
+    }
+
+    .cover p {
+        font-size: 2vh;
+        color: #262e6b;
     }
 }
 
@@ -76,38 +57,28 @@ p {
 
     .bg {
         background-image: url('./asset/test_laptop.jpg');
-        max-width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
+        position: relative;
         background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 180vh;
     }
 
-    .header {
+    .cover {
         background-color: #fff;
-        margin-top: 10%;
+        width: 70%;
+        padding: 10px;
+        margin: auto;
+        border-radius: 15px;
     }
 
-    .text_container {
-        position: absolute;
-        color: white;
-        font-family: 'berlin';
-    }
-
-    .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .cover h1 {
         text-align: center;
-        color: white;
-    }
-
-    h1 {
         font-size: 1.5em;
         color: #262e6b;
     }
 
-    p {
+    .cover p {
         font-size: 1rem;
         color: #262e6b;
     }
@@ -116,88 +87,60 @@ p {
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .bg {
         background-image: url('./asset/stand_bg.jpg');
-        height: 100vh;
-        width: 100vw;
-        background-position: center;
-        background-repeat: no-repeat;
+        position: relative;
         background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 190vh;
     }
 
-    .header {
+    .cover {
         background-color: #fff;
-        margin-top: 25%;
+        width: 70%;
+        padding: 10px;
+        margin: auto;
+        border-radius: 15px;
     }
 
-    .text_container {
-        position: absolute;
-        color: white;
-        font-family: 'berlin';
-    }
-
-    .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .cover h1 {
         text-align: center;
-        color: white;
-    }
-
-    h1 {
         font-size: 1.5em;
         color: #262e6b;
     }
 
-    p {
+    .cover p {
         font-size: 1rem;
         color: #262e6b;
     }
 }
 
-@media (max-width: 768px) {
-    .bg_tc {
-        background-image: url('./asset/stand_bg.jpg');
-        height: 100vh;
-        width: 100vw;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-    }
-
+@media (max-width: 767px) {
     .bg {
         background-image: url('./asset/stand_bg.jpg');
-        height: 100vh;
-        background-position: center;
-        background-repeat: no-repeat;
+        position: relative;
         background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 190vh;
+        width: 100vw;
+        background-position: center;
     }
 
-    .header {
+    .cover {
         background-color: #fff;
+        width: 80%;
+        padding: 10px;
+        margin: auto;
+        border-radius: 15px;
     }
 
-    .text_container {
-        position: absolute;
-        color: white;
-        font-family: 'berlin';
-    }
-
-    .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    .cover h1 {
         text-align: center;
-        color: white;
-    }
-
-    h1 {
-        font-size: 1.5em;
+        font-size: 1em;
         color: #262e6b;
     }
 
-    p {
+    .cover p {
         font-size: 0.7rem;
         color: #262e6b;
     }
