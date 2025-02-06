@@ -56,10 +56,10 @@ html {
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 
     .bg {
-        background-image: url('./asset/test_laptop.jpg');
+        background-image: url('./asset/land_bg.jpg');
         position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-repeat: round;
         background-attachment: fixed;
         height: 180vh;
     }
@@ -88,10 +88,10 @@ html {
     .bg {
         background-image: url('./asset/stand_bg.jpg');
         position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-repeat: round;
         background-attachment: fixed;
-        height: 190vh;
+        height: 200vh;
     }
 
     .cover {
@@ -118,12 +118,12 @@ html {
     .bg {
         background-image: url('./asset/stand_bg.jpg');
         position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        /* background-size: cover; */
+        background-repeat: round;
         height: 190vh;
         width: 100vw;
-        background-position: center;
+        background-size: 100% auto;
+        background-attachment: fixed;
     }
 
     .cover {
